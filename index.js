@@ -66,7 +66,7 @@ function doMagic(item) {
                 const pattern = new RegExp(`${currDayToCheck}|${nextDayToCheck}`, 'ig')
                 const isGoodToGo = pattern.test(data)
 
-                if (isGoodToGo) sendMessage(item.name)
+                if (isGoodToGo) sendMessage(item.name, `${item.host}${item.subpaths}`)
             }
         })
         .catch(function (error) {
@@ -74,9 +74,9 @@ function doMagic(item) {
         })
 }
 
-function sendMessage(city) {
+function sendMessage(city, link) {
     const channel = 'tests'
-    const message = `Gogo dispo ${city}!!!`
+    const message = `Gogo dispo ${city}!!! Link: ${link}`
 
     sendSlack(channel, message)
 }
