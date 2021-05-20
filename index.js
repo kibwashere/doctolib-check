@@ -28,7 +28,7 @@ const items = [
     }
 ]
 
-cron.schedule('* * * * *', () => {
+cron.schedule('20 * * * * *', () => {
     loopItems()
 })
 
