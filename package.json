@@ -13,6 +13,8 @@
     "@slack/web-api": "^6.2.3",
     "axios": "^0.21.1",
     "dotenv": "^9.0.2",
-    "node-cron": "^3.0.0"
+    "node-cron": "^3.0.0",
+    "phantom": "^6.3.0",
+    "webpage": "^0.3.0"
   }
 }
